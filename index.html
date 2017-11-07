@@ -37,7 +37,7 @@
 
 //            消费中心和洗车网点切换
             $(".speed7-nav ul li").on("click", function(){
-               let speed1 = $(this).hasClass("speed7-nav-default");
+               var speed1 = $(this).hasClass("speed7-nav-default");
                 if (!speed1){
                     $(".speed7-nav ul li").toggleClass("speed7-nav-default");
                 }
