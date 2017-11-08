@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = 0"/>
+    <meta name="x5-orientation" content="portrait"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="format-detection" content="email=no"/>
+    <meta name="keywords" content="关键字">
+    <meta name="description" content="描述">
+    <link href="favicon.ico" rel="shortcut icon">
+    <title>速7洗车系统</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/rem.min.js"></script>
+    <script type="text/javascript" src="js/fastclick.min.js"></script>
+    <script>
+        //阻止穿透事件
+        $(function () {
+            new
+            FastClick(document.body);
+        });
+
+        $(document).ready(function () {
+            //		背景高度
+            var winHeight = window.innerHeight;
+            var bodyheight = $(".speed7-wallet").height();
+//            钱包背景设置
+            var bodyheightn = $(".speed7-wallet-nav").height();
+            var winHeightc = winHeight - bodyheightn;
+            var bodyheightc = bodyheight - bodyheightn;
+            if (winHeight > bodyheight){
+                $(".speed7-wallet").css({height: winHeight});
+                $(".speed7-wallet-content").css({height: winHeightc});
+            }else {
+                $(".speed7-wallet").css({height: bodyheight});
+                $(".speed7-wallet-content").css({height: bodyheightc});
+            }
+        })
+    </script>
+</head>
+<body>
+<div class="speed7-wallet">
+    <header>
+        <div class="speed7-wallet-nav">
+            <i class="iconfont icon-zuo"></i>
+            <span>钱包</span>
+        </div>
+    </header>
+    <article>
+        <div class="speed7-wallet-content">
+            <dl>
+                <dt>
+                    <div class="speed7-wallet-content-left">
+                        <p>余额（元）</p>
+                        <h3>300.00</h3>
+                        <span>消费支付优先使用</span>
+                    </div>
+                    <div class="speed7-wallet-content-right">
+                        <p>充值</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </dt>
+                <dt>
+                    <div class="speed7-wallet-content-left">
+                        <p>优惠券（张）</p>
+                        <h3>0 张</h3>
+                        <span>点击使用</span>
+                    </div>
+                    <div class="speed7-wallet-content-right">
+                        <p>查看</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </dt>
+            </dl>
+        </div>
+    </article>
+</div>
+</body>
+</html>
