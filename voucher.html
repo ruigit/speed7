@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = 0"/>
+    <meta name="x5-orientation" content="portrait"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="format-detection" content="email=no"/>
+    <meta name="keywords" content="关键字">
+    <meta name="description" content="描述">
+    <link href="favicon.ico" rel="shortcut icon">
+    <title>速7洗车系统</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/rem.min.js"></script>
+    <script type="text/javascript" src="js/fastclick.min.js"></script>
+    <script>
+        //阻止穿透事件
+        $(function () {
+            new
+            FastClick(document.body);
+        });
+
+        $(document).ready(function () {
+            //		背景高度
+            var winHeight = window.innerHeight;
+            var bodyheight = $(".speed7-wallet").height();
+//            钱包背景设置
+            var bodyheightn = $(".speed7-wallet-nav").height();
+            var winHeightc = winHeight - bodyheightn;
+            var bodyheightc = bodyheight - bodyheightn;
+            if (winHeight > bodyheight){
+                $(".speed7-wallet").css({height: winHeight});
+                $(".speed7-voucher-content").css({height: winHeightc});
+            }else {
+                $(".speed7-wallet").css({height: bodyheight});
+                $(".speed7-voucher-content").css({height: bodyheightc});
+            }
+//            选择额度和项目
+            $(".speed7-selection-chose ul li").on("click", function(){
+                $(this).addClass("speed7-chosed").siblings().removeClass("speed7-chosed");
+            })
+//            选择支付
+
+            $(".speed7-payment dl dt").on("click", function(){
+                var a =  $(this).children(".icon-xuanze1").css("display")=='block';
+                if(a) {
+//                    当前选中状态
+                $(this).children(".icon-xuanze1").css("display","none");
+                $(this).children(".b-xuanze").css("display","block");
+                $(this).children(".icon-xuanze").css("display","block");
+//                除当前外的取消状态
+                $(this).siblings().children(".icon-xuanze1").css("display","block");
+                $(this).siblings().children(".b-xuanze").css("display","none");
+                $(this).siblings().children(".icon-xuanze").css("display","none");
+                }else{
+//                    取消状态
+                $(this).children(".icon-xuanze1").css("display","block");
+                $(this).children(".b-xuanze").css("display","none");
+                $(this).children(".icon-xuanze").css("display","none");
+                }
+            })
+
+//            更多支付方式
+            $(".speed7-more").on("click", function(){
+                $(".speed7-payment dl dt").not(":first").show();
+                $(".speed7-more").hide();
+            })
+        })
+    </script>
+</head>
+<body>
+<div class="speed7-wallet">
+    <header>
+        <div class="speed7-wallet-nav">
+            <i class="iconfont icon-zuo"></i>
+            <span>充值中心</span>
+        </div>
+    </header>
+    <article>
+        <div class="speed7-voucher-content">
+            <section>
+                <div class="speed7-current">
+                    <div class="speed7-currentde">
+                    <p>当前账号</p>
+                    <span>
+                        <img src="img/head.jpg">
+                        栅格化（18548758458）
+                    </span>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </section>
+            <aside>
+                <div class="speed7-selection">
+                    <div class="speed7-selection-borderl"></div>
+                    <div class="speed7-selection-title">请选择充值的额度</div>
+                    <div class="speed7-selection-borderr"></div>
+                    <div class="clearfix"></div>
+                    <div class="speed7-selection-chose">
+                        <ul>
+                            <li class="speed7-chosed">
+                                <p>10元</p>
+                                <span>售价：10元</span>
+                            </li>
+                            <li>
+                                <p>20元</p>
+                                <span>售价：20元</span>
+                            </li>
+                            <li>
+                                <p>32元</p>
+                                <span>售价：30元</span>
+                            </li>
+                            <li>
+                                <p>55元</p>
+                                <span>售价：50元</span>
+                            </li>
+                            <li>
+                                <p>120元</p>
+                                <span>售价：100元</span>
+                            </li>
+                            <li>
+                                <p>380元</p>
+                                <span>售价：300元</span>
+                            </li>
+                            <div class="clearfix"></div>
+                        </ul>
+                    </div>
+                    <div class="speed7-chose-button">立即充值</div>
+                    <div class="speed7-selection-borderl"></div>
+                    <div class="speed7-selection-title">请选择充值的方式</div>
+                    <div class="speed7-selection-borderr"></div>
+                    <div class="clearfix"></div>
+                    <div class="speed7-payment">
+                        <dl>
+                            <dt class="weixinpay">
+                                <i class="iconfont icon-weixinzhifu"></i>
+                                <span>微信</span>
+                                <b class="b-xuanze"></b>
+                                <i class="iconfont icon-xuanze"></i>
+                                <i class="iconfont icon-xuanze1"></i>
+                                <div class="clearfix"></div>
+                            </dt>
+                            <dt class="qqpay">
+                                <i class="iconfont icon-QQqianbaozhifu"></i>
+                                <span>QQ支付</span>
+                                <b class="b-xuanze"></b>
+                                <i class="iconfont icon-xuanze"></i>
+                                <i class="iconfont icon-xuanze1"></i>
+                                <div class="clearfix"></div>
+                            </dt>
+                            <div class="speed7-more">
+                                <i class="iconfont icon-icon"></i>
+                                <span>更多支付方式</span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </article>
+</div>
+</body>
+</html>
