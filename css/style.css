@@ -3,17 +3,15 @@
     font-family: "SourceHanSansCN";
     src: url('../fonts/SourceHanSansCN.eot?t=1502934803553');
     /* IE9*/
-    src: url('../fonts/SourceHanSansCN.eot?t=1502934803553#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/SourceHanSansCN.woff?t=1502934803553') format('woff'), /* chrome, firefox */ url('../fonts/SourceHanSansCN.ttf?t=1502934803553') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/ url('../fonts/SourceHanSansCN.svg?t=1502934803553#iconfont') format('svg');/* iOS 4.1- */
+    src: url('../fonts/SourceHanSansCN.eot?t=1502934803553#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/SourceHanSansCN.woff?t=1502934803553') format('woff'), /* chrome, firefox */ url('../fonts/SourceHanSansCN.ttf?t=1502934803553') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/ url('../fonts/SourceHanSansCN.svg?t=1502934803553#SourceHanSansCN') format('svg');/* iOS 4.1- */
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'iconfont';  /* project id 465465 */
-    src: url('//at.alicdn.com/t/font_465465_p673bz4kl9dx6r.eot');
-    src: url('//at.alicdn.com/t/font_465465_p673bz4kl9dx6r.eot?#iefix') format('embedded-opentype'),
-    url('//at.alicdn.com/t/font_465465_p673bz4kl9dx6r.woff') format('woff'),
-    url('//at.alicdn.com/t/font_465465_p673bz4kl9dx6r.ttf') format('truetype'),
-    url('//at.alicdn.com/t/font_465465_p673bz4kl9dx6r.svg#iconfont') format('svg');
+    font-family: 'iconfont';
+    src: url('../fonts/iconfont.eot?t=1502934803553');
+    /* IE9*/
+    src: url('../fonts/iconfont.eot?t=1502934803553#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/iconfont.woff?t=1502934803553') format('woff'), /* chrome, firefox */ url('../fonts/iconfont.ttf?t=1502934803553') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/ url('../fonts/iconfont.svg?t=1502934803553#iconfont') format('svg');/* iOS 4.1- */
 }
 .iconfont {
     font-family:"iconfont" !important;
