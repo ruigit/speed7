@@ -649,24 +649,23 @@ dl a dt{
     float: left;
 }
 .speed7-currentde span{
-    width: 70%;
+    width: 53%;
     float: left;
     height: 1.2rem;
     line-height: 1.2rem;
     font-size: 0.35rem;
     color: #837b79;
-    text-align: right;
+    text-align: left;
     display: block;
-    margin-right: 2%;
 }
 .speed7-currentde img{
     width: 0.5rem;
+    float: left;
     height: 0.5rem;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    line-height: 1rem;
-    margin-right: 0.05rem;
+    margin: 0.35rem 0.15rem auto 0.6rem;
     text-align: center;
     vertical-align: middle;
 }
