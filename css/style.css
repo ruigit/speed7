@@ -15,7 +15,7 @@
 }
 .iconfont {
     font-family:"iconfont" !important;
-    font-size:16px;
+    font-size:0.2rem;
     font-style:normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -41,6 +41,8 @@
 .icon-zuo:before { content: "\e62d"; }
 
 .icon-QQqianbaozhifu:before { content: "\e60c"; }
+
+.icon-weixin:before { content: "\e635"; }
 
 .icon-weixinzhifu:before { content: "\e65c"; }
 
@@ -869,6 +871,70 @@ dl a dt{
     margin: 0.2rem auto 0.1rem auto;
 }
 /*option end*/
+.speed7-login{
+    width: 100%;
+    background: #fff;
+}
+.speed7-login-content{
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+}
+.speed7-login-selection-title{
+    width: 40%;
+    text-align: center;
+    color: #cacaca;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    font-size: 0.25rem;
+    float: left;
+}
+.speed7-login-selection-borderl{
+    border-bottom: 1px #f1f1f1 solid;
+    float: left;
+    width: 25%;
+    margin-right: 4%;
+    margin-top: 0.6rem;
+}
+.speed7-login-selection-borderr{
+    border-bottom: 1px #f1f1f1 solid;
+    float: left;
+    width: 25%;
+    margin-left: 4%;
+    margin-top: 0.59rem;
+}
+.speed7-login-logo{
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+.speed7-login-logo img{
+    width: 3.7rem;
+    height: 1.3rem;
+}
+.speed7-login-foot{
+    width: 50%;
+    height: auto;
+    margin: 1.6rem auto;
+}
+.icon-weixin{
+    font-size: 1rem;
+    margin-left: 36%;
+    line-height: 1.2rem;
+    height: 1.2rem;
+    color: #58b91a;
+}
+.speed7-login-foot span{
+    display: block;
+    font-size: 0.25rem;
+    width: 100%;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    color: #9c9c9c;
+    text-align: center;
+}
+/*login end*/
 /*pad-pro横屏*/
 @media only screen and (min-width: 1366px) {
 
